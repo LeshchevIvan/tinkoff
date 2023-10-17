@@ -11,7 +11,7 @@ public class Task_6_Test {
         int n = 805;
 
         //when
-        int numIteration = Main.countK(n);
+        int numIteration = task6.countK(n);
 
         //then
         assertThat(numIteration).isEqualTo(-1);
@@ -24,7 +24,7 @@ public class Task_6_Test {
         int n = 12345;
 
         //when
-        int numIteration = Main.countK(n);
+        int numIteration = task6.countK(n);
 
         //then
         assertThat(numIteration).isEqualTo(-1);
@@ -37,7 +37,7 @@ public class Task_6_Test {
         int n = 3333;
 
         //when
-        int numIteration = Main.countK(n);
+        int numIteration = task6.countK(n);
 
         //then
         assertThat(numIteration).isEqualTo(-1);
@@ -50,7 +50,7 @@ public class Task_6_Test {
         int n = 1234;
 
         //when
-        int numIteration = Main.countK(n);
+        int numIteration = task6.countK(n);
 
         //then
         assertThat(numIteration).isEqualTo(3);

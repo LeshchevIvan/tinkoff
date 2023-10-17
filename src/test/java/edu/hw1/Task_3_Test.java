@@ -12,7 +12,7 @@ public class Task_3_Test {
         float[] arr2 = {0, 1, 2, 3, 4, 5};
 
         //when
-        boolean isNestable = Main.isNestable(arr1, arr2);
+        boolean isNestable = task3.isNestable(arr1, arr2);
 
         //then
         assertThat(isNestable).isEqualTo(true);
@@ -26,7 +26,7 @@ public class Task_3_Test {
         float[] arr2 = {0, 1, 2, 3, 4, 5};
 
         //when
-        boolean isNestable = Main.isNestable(arr1, arr2);
+        boolean isNestable = task3.isNestable(arr1, arr2);
 
         //then
         assertThat(isNestable).isEqualTo(false);

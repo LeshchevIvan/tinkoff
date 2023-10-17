@@ -12,7 +12,7 @@ public class Task_1_Test {
         String time = "qwerty:123";
 
         // when
-        int timeToSeconds = Main.minutesToSeconds(time);
+        int timeToSeconds = task1.minutesToSeconds(time);
 
         // then
         assertThat(timeToSeconds).isEqualTo(-1);
@@ -25,7 +25,7 @@ public class Task_1_Test {
         String time = "1:60";
 
         // when
-        int timeToSeconds = Main.minutesToSeconds(time);
+        int timeToSeconds = task1.minutesToSeconds(time);
 
         // then
         assertThat(timeToSeconds).isEqualTo(-1);
@@ -38,7 +38,7 @@ public class Task_1_Test {
         String time = "02:50";
 
         // when
-        int timeToSeconds = Main.minutesToSeconds(time);
+        int timeToSeconds = task1.minutesToSeconds(time);
 
         // then
         assertThat(timeToSeconds).isEqualTo(170);

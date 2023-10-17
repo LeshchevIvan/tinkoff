@@ -11,7 +11,7 @@ public class Task_4_Test {
         String str = "badc14";
 
         //when
-        String fixedString = Main.fixString(str);
+        String fixedString = task4.fixString(str);
 
         //then
         assertThat(fixedString).isEqualTo("abcd41");
@@ -24,7 +24,7 @@ public class Task_4_Test {
         String str = "badce";
 
         //when
-        String fixedString = Main.fixString(str);
+        String fixedString = task4.fixString(str);
 
         //then
         assertThat(fixedString).isEqualTo("abcde");
@@ -37,7 +37,7 @@ public class Task_4_Test {
         String str = "b";
 
         //when
-        String fixedString = Main.fixString(str);
+        String fixedString = task4.fixString(str);
 
         //then
         assertThat(fixedString).isEqualTo("b");

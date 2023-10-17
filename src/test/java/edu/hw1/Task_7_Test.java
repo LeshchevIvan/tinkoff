@@ -12,7 +12,7 @@ public class Task_7_Test {
         int shift = 45;
 
         //when
-        int result = Main.rotateRight(n, shift);
+        int result = task7.rotateRight(n, shift);
 
         //then
         assertThat(result).isEqualTo(63);
@@ -26,7 +26,7 @@ public class Task_7_Test {
         int shift = 4;
 
         //when
-        int result = Main.rotateLeft(n, shift);
+        int result = task7.rotateLeft(n, shift);
 
         //then
         assertThat(result).isEqualTo(27);

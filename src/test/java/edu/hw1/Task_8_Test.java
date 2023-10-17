@@ -19,7 +19,7 @@ public class Task_8_Test {
         };
 
         //when
-        boolean result = Main.knightBoardCapture(chessboard);
+        boolean result = task8.knightBoardCapture(chessboard);
 
         //then
         assertThat(result).isEqualTo(false);
@@ -41,7 +41,7 @@ public class Task_8_Test {
         };
 
         //when
-        boolean result = Main.knightBoardCapture(chessboard);
+        boolean result = task8.knightBoardCapture(chessboard);
 
         //then
         assertThat(result).isEqualTo(true);
@@ -63,7 +63,7 @@ public class Task_8_Test {
         };
 
         //when
-        boolean result = Main.knightBoardCapture(chessboard);
+        boolean result = task8.knightBoardCapture(chessboard);
 
         //then
         assertThat(result).isEqualTo(false);

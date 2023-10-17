@@ -11,7 +11,7 @@ public class Task_2_Test{
         int num=12345;
 
         // when
-        int nDigit=Main.countDigits(num);
+        int nDigit=task2.countDigits(num);
 
         // then
         assertThat(nDigit).isEqualTo(5);
@@ -23,7 +23,7 @@ public class Task_2_Test{
         int num=-5212;
 
         // when
-        int nDigit=Main.countDigits(num);
+        int nDigit=task2.countDigits(num);
 
         // then
         assertThat(nDigit).isEqualTo(4);
