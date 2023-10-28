@@ -34,8 +34,6 @@ public class task7 {
 
     public static void pushLeft(char @NotNull [] arr) {
         char firstNum = arr[0];
-        char oldValue;
-        char newValue = arr[1];
         for (int i = 0; i < arr.length - 1; i++) {
             arr[i] = arr[i + 1];
         }
