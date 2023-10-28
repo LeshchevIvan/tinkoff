@@ -1,20 +1,22 @@
 package edu.hw1;
 import org.jetbrains.annotations.NotNull;
 
-public class task8 {
+public class Task8 {
     public static boolean knightBoardCapture(int[] @NotNull [] chessboard) {
         boolean ans = true;
-        boolean is8X8 = true;
+        boolean is8X8;
+        boolean correctRowLength=true;
+        boolean correctColLength=true;
         for (int[] row : chessboard) {
             if (row.length != 8) {
-                is8X8 = false;
+                correctRowLength = false;
                 break;
             }
         }
         if (chessboard.length != 8) {
-            is8X8 = false;
-            return is8X8;
+            correctColLength = false;
         }
+        is8X8=correctColLength&correctRowLength;
 
         if (is8X8) {
             final int L = chessboard.length;
@@ -35,7 +37,7 @@ public class task8 {
                     }
                 }
             }
-            final double Length = Math.pow(2, 2) + 1;
+            final int Length = 5;
 
             for (int i = 0; i < numberOfKnights; i++) {
                 for (int j = 0; j < numberOfKnights; j++) {
@@ -48,6 +50,6 @@ public class task8 {
                 }
             }
         }
-        return ans;
+        return ans&is8X8;
     }
 }

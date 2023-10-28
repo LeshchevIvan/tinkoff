@@ -1,3 +1,4 @@
+package edu.hw1;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.DisplayName;
@@ -12,7 +13,7 @@ public class Task_7_Test {
         int shift = 45;
 
         //when
-        int result = task7.rotateRight(n, shift);
+        int result = Task7.rotateRight(n, shift);
 
         //then
         assertThat(result).isEqualTo(63);
@@ -26,7 +27,7 @@ public class Task_7_Test {
         int shift = 4;
 
         //when
-        int result = task7.rotateLeft(n, shift);
+        int result = Task7.rotateLeft(n, shift);
 
         //then
         assertThat(result).isEqualTo(27);

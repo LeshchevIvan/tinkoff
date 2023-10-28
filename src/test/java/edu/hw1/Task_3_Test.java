@@ -1,3 +1,4 @@
+package edu.hw1;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.DisplayName;
@@ -12,7 +13,7 @@ public class Task_3_Test {
         float[] arr2 = {0, 1, 2, 3, 4, 5};
 
         //when
-        boolean isNestable = task3.isNestable(arr1, arr2);
+        boolean isNestable = Task3.isNestable(arr1, arr2);
 
         //then
         assertThat(isNestable).isEqualTo(true);
@@ -26,7 +27,7 @@ public class Task_3_Test {
         float[] arr2 = {0, 1, 2, 3, 4, 5};
 
         //when
-        boolean isNestable = task3.isNestable(arr1, arr2);
+        boolean isNestable = Task3.isNestable(arr1, arr2);
 
         //then
         assertThat(isNestable).isEqualTo(false);

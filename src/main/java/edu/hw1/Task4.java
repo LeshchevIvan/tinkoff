@@ -1,7 +1,7 @@
 package edu.hw1;
 import org.jetbrains.annotations.NotNull;
 
-public class task4 {
+public class Task4 {
     public static @NotNull String fixString(String text) {
         char[] ans = text.toCharArray();
         int len = ans.length;
@@ -13,13 +13,13 @@ public class task4 {
                 ans[i] = ans[i + 1];
                 ans[i + 1] = buf;
             }
-        } else if (len != 1) {
+        } else {
             for (int i = 0; i < len - 2; i += 2) {
                 buf = ans[i];
                 ans[i] = ans[i + 1];
                 ans[i + 1] = buf;
             }
-        } else return text;
+        }
         return String.valueOf(ans);
     }
 }

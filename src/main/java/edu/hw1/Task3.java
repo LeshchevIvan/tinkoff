@@ -1,7 +1,7 @@
 package edu.hw1;
 import org.jetbrains.annotations.NotNull;
 
-public class task3 {
+public class Task3 {
     public static boolean isNestable(float @NotNull [] a1, float @NotNull [] a2) {
         float min_a1 = a1[0];
         float min_a2 = a2[0];

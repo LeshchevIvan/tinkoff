@@ -1,3 +1,5 @@
+package edu.hw1;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.DisplayName;
@@ -12,7 +14,7 @@ public class Task_1_Test {
         String time = "qwerty:123";
 
         // when
-        int timeToSeconds = task1.minutesToSeconds(time);
+        int timeToSeconds = Task1.minutesToSeconds(time);
 
         // then
         assertThat(timeToSeconds).isEqualTo(-1);
@@ -25,7 +27,7 @@ public class Task_1_Test {
         String time = "1:60";
 
         // when
-        int timeToSeconds = task1.minutesToSeconds(time);
+        int timeToSeconds = Task1.minutesToSeconds(time);
 
         // then
         assertThat(timeToSeconds).isEqualTo(-1);
@@ -38,7 +40,7 @@ public class Task_1_Test {
         String time = "02:50";
 
         // when
-        int timeToSeconds = task1.minutesToSeconds(time);
+        int timeToSeconds = Task1.minutesToSeconds(time);
 
         // then
         assertThat(timeToSeconds).isEqualTo(170);

@@ -1,9 +1,10 @@
 package edu.hw1;
 import org.jetbrains.annotations.NotNull;
 
-public class task7 {
+public class Task7 {
     public static int rotateRight(int n, int shift) {
         char[] bit_num = Integer.toBinaryString(n).toCharArray();
+        shift=shift%bit_num.length;
         for (int i = 0; i < shift; i++) {
             pushRight(bit_num);
         }
@@ -25,6 +26,7 @@ public class task7 {
 
     public static int rotateLeft(int n, int shift) {
         char[] bit_num = Integer.toBinaryString(n).toCharArray();
+        shift=shift%bit_num.length;
         for (int i = 0; i < shift; i++) {
             pushLeft(bit_num);
         }

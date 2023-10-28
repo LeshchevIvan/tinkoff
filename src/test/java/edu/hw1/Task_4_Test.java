@@ -1,3 +1,4 @@
+package edu.hw1;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.DisplayName;
@@ -11,7 +12,7 @@ public class Task_4_Test {
         String str = "badc14";
 
         //when
-        String fixedString = task4.fixString(str);
+        String fixedString = Task4.fixString(str);
 
         //then
         assertThat(fixedString).isEqualTo("abcd41");
@@ -24,7 +25,7 @@ public class Task_4_Test {
         String str = "badce";
 
         //when
-        String fixedString = task4.fixString(str);
+        String fixedString = Task4.fixString(str);
 
         //then
         assertThat(fixedString).isEqualTo("abcde");
@@ -37,7 +38,7 @@ public class Task_4_Test {
         String str = "b";
 
         //when
-        String fixedString = task4.fixString(str);
+        String fixedString = Task4.fixString(str);
 
         //then
         assertThat(fixedString).isEqualTo("b");

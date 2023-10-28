@@ -1,3 +1,4 @@
+package edu.hw1;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.DisplayName;
@@ -19,7 +20,7 @@ public class Task_8_Test {
         };
 
         //when
-        boolean result = task8.knightBoardCapture(chessboard);
+        boolean result = Task8.knightBoardCapture(chessboard);
 
         //then
         assertThat(result).isEqualTo(false);
@@ -41,7 +42,7 @@ public class Task_8_Test {
         };
 
         //when
-        boolean result = task8.knightBoardCapture(chessboard);
+        boolean result = Task8.knightBoardCapture(chessboard);
 
         //then
         assertThat(result).isEqualTo(true);
@@ -63,7 +64,7 @@ public class Task_8_Test {
         };
 
         //when
-        boolean result = task8.knightBoardCapture(chessboard);
+        boolean result = Task8.knightBoardCapture(chessboard);
 
         //then
         assertThat(result).isEqualTo(false);

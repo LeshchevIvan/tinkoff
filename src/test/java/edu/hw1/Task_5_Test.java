@@ -1,3 +1,4 @@
+package edu.hw1;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.DisplayName;
@@ -11,7 +12,7 @@ public class Task_5_Test {
         Integer number = 101;
 
         //when
-        boolean isPalindrome = task5.isPalindromeDescendant(number);
+        boolean isPalindrome = Task5.isPalindromeDescendant(number);
 
         //then
         assertThat(isPalindrome).isEqualTo(true);
@@ -24,7 +25,7 @@ public class Task_5_Test {
         Integer number = 123;
 
         //when
-        boolean isPalindrome = task5.isPalindromeDescendant(number);
+        boolean isPalindrome = Task5.isPalindromeDescendant(number);
 
         //then
         assertThat(isPalindrome).isEqualTo(true);
@@ -37,7 +38,7 @@ public class Task_5_Test {
         Integer number = 13001120;
 
         //when
-        boolean isPalindrome = task5.isPalindromeDescendant(number);
+        boolean isPalindrome = Task5.isPalindromeDescendant(number);
 
         //then
         assertThat(isPalindrome).isEqualTo(true);
@@ -50,7 +51,7 @@ public class Task_5_Test {
         Integer number = 11211230;
 
         //when
-        boolean isPalindrome = task5.isPalindromeDescendant(number);
+        boolean isPalindrome = Task5.isPalindromeDescendant(number);
 
         //then
         assertThat(isPalindrome).isEqualTo(true);
@@ -63,7 +64,7 @@ public class Task_5_Test {
         Integer number = 1;
 
         //when
-        boolean isPalindrome = task5.isPalindromeDescendant(number);
+        boolean isPalindrome = Task5.isPalindromeDescendant(number);
 
         //then
         assertThat(isPalindrome).isEqualTo(false);
@@ -76,7 +77,7 @@ public class Task_5_Test {
         Integer number = -235;
 
         //when
-        boolean isPalindrome = task5.isPalindromeDescendant(number);
+        boolean isPalindrome = Task5.isPalindromeDescendant(number);
 
         //then
         assertThat(isPalindrome).isEqualTo(true);
@@ -89,7 +90,7 @@ public class Task_5_Test {
         Integer number = 144;
 
         //when
-        boolean isPalindrome = task5.isPalindromeDescendant(number);
+        boolean isPalindrome = Task5.isPalindromeDescendant(number);
 
         //then
         assertThat(isPalindrome).isEqualTo(false);

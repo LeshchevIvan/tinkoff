@@ -2,7 +2,8 @@ package edu.hw1;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class task6 {
+public class Task6 {
+    private static final Integer[] Kaprekar = {6, 1, 7, 4};
     public static int countK(Integer n) {
         if (n == 6174) return 1;
         char[] arrayNum = n.toString().toCharArray();
@@ -48,9 +49,10 @@ public class task6 {
 
     public static int kaprekar(Integer[] sortArrayNum, Integer[] reversSortArrayNum) {
         int len = 4;
-        Integer[] Kaprekar = {6, 1, 7, 4};
+
         Arrays.sort(sortArrayNum);
         Arrays.sort(reversSortArrayNum, Collections.reverseOrder());
+
 
         Integer[] buf = new Integer[len];
 

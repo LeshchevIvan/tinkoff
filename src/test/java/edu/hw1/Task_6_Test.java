@@ -1,3 +1,4 @@
+package edu.hw1;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.DisplayName;
@@ -11,7 +12,7 @@ public class Task_6_Test {
         int n = 805;
 
         //when
-        int numIteration = task6.countK(n);
+        int numIteration = Task6.countK(n);
 
         //then
         assertThat(numIteration).isEqualTo(-1);
@@ -24,7 +25,7 @@ public class Task_6_Test {
         int n = 12345;
 
         //when
-        int numIteration = task6.countK(n);
+        int numIteration = Task6.countK(n);
 
         //then
         assertThat(numIteration).isEqualTo(-1);
@@ -37,7 +38,7 @@ public class Task_6_Test {
         int n = 3333;
 
         //when
-        int numIteration = task6.countK(n);
+        int numIteration = Task6.countK(n);
 
         //then
         assertThat(numIteration).isEqualTo(-1);
@@ -50,7 +51,7 @@ public class Task_6_Test {
         int n = 1234;
 
         //when
-        int numIteration = task6.countK(n);
+        int numIteration = Task6.countK(n);
 
         //then
         assertThat(numIteration).isEqualTo(3);

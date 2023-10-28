@@ -1,3 +1,4 @@
+package edu.hw1;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.DisplayName;
@@ -11,7 +12,7 @@ public class Task_2_Test{
         int num=12345;
 
         // when
-        int nDigit=task2.countDigits(num);
+        int nDigit= Task2.countDigits(num);
 
         // then
         assertThat(nDigit).isEqualTo(5);
@@ -23,7 +24,7 @@ public class Task_2_Test{
         int num=-5212;
 
         // when
-        int nDigit=task2.countDigits(num);
+        int nDigit= Task2.countDigits(num);
 
         // then
         assertThat(nDigit).isEqualTo(4);
