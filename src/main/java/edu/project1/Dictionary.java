@@ -1,5 +1,5 @@
 
-
+package edu.project1;
 public class Dictionary {
     private static final String[] dict = {"hello", "world", "tinkoff", "java", "laptop", "microphone"};
 

@@ -1,3 +1,4 @@
+package edu.project1;
 import java.util.Scanner;
 
 class ConsoleHangman {

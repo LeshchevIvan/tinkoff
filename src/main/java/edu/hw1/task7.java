@@ -1,3 +1,4 @@
+package edu.hw1;
 import org.jetbrains.annotations.NotNull;
 
 public class task7 {
