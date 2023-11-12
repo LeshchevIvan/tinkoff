@@ -5,6 +5,10 @@ import java.util.ArrayList;
 
 public class Task5 {
 
+    public enum Sort {
+        ASC, DESC
+    }
+
     private static String findLastName(String name) {
         String[] FLName = name.split(" ");
         if (FLName.length == 1) {
@@ -38,14 +42,14 @@ public class Task5 {
         return shift;
     }
 
-    public static Object[] parseContacts(String[] nameList, String sortMode) {
+    public static Object[] parseContacts(String[] nameList, Sort sortMode) {
         ArrayList<String> sortedList = new ArrayList<>();
         sortedList.addFirst(nameList[0]);
 
         int shift;
         String sortedName;
         String unsortedName;
-        if (sortMode.equals("ASC")) {
+        if (sortMode.equals(Sort.ASC)) {
             for (int i = 1; i < nameList.length; i++) {
                 unsortedName=findLastName(nameList[i]);
                 for (int j = 0; j < sortedList.size(); j++) {
@@ -60,7 +64,7 @@ public class Task5 {
                     }
                 }
             }
-        } else if (sortMode.equals("DESC")) {
+        } else if (sortMode.equals(Sort.DESC)) {
             for (int i = 1; i < nameList.length; i++) {
                 unsortedName=findLastName(nameList[i]);
                 for (int j = 0; j < sortedList.size(); j++) {
@@ -81,7 +85,4 @@ public class Task5 {
         return sortedList.toArray();
     }
 
-    public static void main(String[] args) {
-        System.out.println(parseContacts(new String[]{ "Paul", "Leonhard Euler", "Carl Gauss" }, "ASC"));
-    }
 }

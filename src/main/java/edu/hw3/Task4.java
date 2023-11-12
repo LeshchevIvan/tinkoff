@@ -66,31 +66,28 @@ public class Task4 {
 
 
         Integer key;
-        String romanValue = "";
+        StringBuilder romanValue = new StringBuilder();
         String buf;
         while (arabicValue != 0) {
             if (arabicValue.toString().charAt(0) == '9' || arabicValue.toString().charAt(0) == '4') {
                 {
                     key = findFirstBigger(arabicValue, dict);
                     arabicValue -= key;
-                    romanValue += dict.get(key);
+                    romanValue.append(dict.get(key));
 
                     key = findFirstLesser(reverseDictOnly10X, key);
                     arabicValue += key;
                     buf = romanValue.substring(romanValue.length() - 1);
-                    romanValue = romanValue.substring(0, romanValue.length() - 1);
-                    romanValue = romanValue + dict.get(key) + buf;
+                    romanValue = new StringBuilder(romanValue.substring(0, romanValue.length() - 1));
+                    romanValue.append(dict.get(key)).append(buf);
                 }
             } else {
                 key = findFirstLesser(arabicValue, dict);
                 arabicValue -= key;
-                romanValue += dict.get(key);
+                romanValue.append(dict.get(key));
             }
         }
-        return romanValue;
+        return romanValue.toString();
     }
 
-    public static void main(String[] args) {
-        System.out.println(convertToRoman(-1));
-    }
 }

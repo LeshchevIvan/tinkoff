@@ -14,10 +14,8 @@ public class Task3 {
             }
         }
 
+
         return dict;
     }
 
-    public static void main(String[] args) {
-        System.out.println(freqDict(new Object[]{"this", "and", "that", 123,1.234,"and"}));
-    }
 }

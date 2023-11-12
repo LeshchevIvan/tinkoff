@@ -4,10 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Task1 {
+    private static final Character[] capitalAlphabet={'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
     public   static Map<Character, Character> fillEncryption(){
         Map<Character, Character> encryption = new HashMap<>();
         int reverseIterator=25;
-        Character[] capitalAlphabet={'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+
         for (int i = 0; i < 13; i++) {
             encryption.put(capitalAlphabet[i],capitalAlphabet[reverseIterator]);
             encryption.put(capitalAlphabet[reverseIterator],capitalAlphabet[i]);
@@ -39,9 +40,4 @@ public class Task1 {
         return String.valueOf(charString);
     }
 
-
-    public static void main(String[] args) {
-        System.out.println(encode("Hello World!"));
-        System.nanoTime();
-    }
 }

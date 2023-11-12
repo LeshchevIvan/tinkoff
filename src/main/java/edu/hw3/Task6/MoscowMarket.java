@@ -16,7 +16,7 @@ public class MoscowMarket implements StockMarket {
         @Override
         public int compare(Stock o1, Stock o2) {
 
-            return o1.getPrice() < o2.getPrice() ? 1 : -1;
+            return Double.compare(o1.getPrice(),o2.getPrice());
 
         }
     }
